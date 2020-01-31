@@ -9,7 +9,10 @@ npm i --save-dev typescript
 ########## inizializza il progetto con il package.json di default
 npm init -y 
 
-########## Compilazione
+########## Compilazione globale
 tsc <nomefile>.ts
 tsc --watch <nomefile>.ts
+
+########## Compilazione locale 
+./node_modules/typescript/bin/tsc
 
