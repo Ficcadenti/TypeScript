@@ -16,3 +16,6 @@ tsc --watch <nomefile>.ts
 ########## Compilazione locale 
 ./node_modules/typescript/bin/tsc
 
+########## Inizializza tsconfig.json
+tsc --init
+
