@@ -5,7 +5,19 @@ let listN: Array<number> = [1, 2, 3];
 let listS: string[] = ['1', '2', '3'];
 let obj: object = {};
 let params: [string, number];
-enum DAYS { LUNEDI = 1, MARTEDI, MERCOLEDI, GIOVEDI, VENERDI, SABATO, DOMENICA };
+enum DAYS {
+    LUNEDI = 1,
+    MARTEDI,
+    MERCOLEDI,
+    GIOVEDI,
+    VENERDI,
+    SABATO,
+    DOMENICA
+};
+enum DAYS {
+    GIORNO = 8,
+    NOTTE
+}
 let giorno: DAYS = DAYS.MERCOLEDI;
 
 function showParams(p: [string, number]) {
@@ -33,7 +45,11 @@ console.log("tuple: " + params);
 console.log("enum: " + DAYS);
 console.log("giorno: " + giorno);
 console.log("giorno: " + DAYS[1]);
+console.log("giorno: " + DAYS[8]);
 console.log(isWorkingDay(DAYS.LUNEDI));
+
+const myDay: DAYS = 8
+console.log(isWorkingDay(myDay));
 
 showParams(params);
 
